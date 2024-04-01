@@ -1,0 +1,152 @@
+:root {
+    --white: #fff;
+    --brand-base: #35383f;
+    --brand-dark: #3a3b36;
+    --brand-light: #f6f6f6;
+    --brand-primary: #430d9b;
+    --brand-secondary: #2817bb;
+    --brand-blue-dark: #25272c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--brand-base);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* SCROLL */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    background: var(--brand-dark);
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: var(--brand-primary);
+    border-radius: 20px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: var(--brand-secondary);
+}
+
+/* /SCROLL */
+
+/* NAV */
+.nav {
+    background-color: var(--brand-blue-dark);
+    font-family: 'Raleway', sans-serif;
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    z-index: 1;
+}
+
+.nav span {
+    color: var(--brand-dark);
+    font-size: 1.7rem;
+    position: absolute;
+    margin: 25px;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 25px;
+}
+
+.nav-list li {
+    list-style-type: none;
+}
+
+.nav-list li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.7rem;
+    padding: 20px;
+}
+
+.nav-list li a:hover {
+    background-color: var(--brand-dark);
+}
+/* /NAV */
+
+/* WELCOME SECTION */
+.welcome-section {
+    height: 100vh;
+}
+
+#welcome-section h1, p {
+    text-align: center;
+    position: relative;
+    top: 40%;
+    z-index: 0;
+    color: var(--white);
+}
+
+#welcome-section h1 {
+    font-size: 3rem;
+}
+
+#welcome-section p {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+/* /WELCOME SECTION */
+
+/* PROJECTS SECTION */
+    .projects-section {
+        background-color: var(--brand-dark);
+        height: 100vh;
+    }
+
+    .projects-section h2 {
+        text-align: center;
+        color: var(--white);
+        padding: 25px;
+    }
+
+    .projects-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .projects-container button{
+        font-size: 6rem;
+        background-color: #00000048;
+        color: var(--white);
+        border: none;
+        padding: 20px;
+    }
+
+    .projects-container button:hover {
+        color: #430d9b;
+        cursor: pointer;
+    }
+
+    /* inside part */
+    .projects-slide {
+        background-color: var(--brand-blue-dark);
+        width: 1000px;
+        height: 626px;
+    }
+
+    .projects-slide #img-projects {
+        width: 1000px;
+        height: 563px;
+        object-fit: contain;
+    }
+
+
+/* /PROJECTS SECTION */

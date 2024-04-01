@@ -7,20 +7,71 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Sobre mim</li>
-                <li>Projetos</li>
-                <li>Contato</li>
-            </ul>
-        </nav>
-    </header>
-    <section class="home">
-        <h1>Pedro Senciano</h1>
-        <h2>Front-end web developer</h2>
-    </section>
+
+    <!-- START NAV -->
+
+    <nav id="navbar" class="nav">
+        <span>&#60;PS&#62;</span>
+        <ul class="nav-list">
+        <li>
+            <a href="#welcome-section">Home</a>
+        </li>
+          <li>
+            <a href="#welcome-section">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projetos</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+  
+      <!-- END NAV -->
+  
+      <!-- START WELCOME SECTION -->
+  
+      <section id="welcome-section" class="welcome-section">
+        <h1>Olá sou Pedro Senciano</h1>
+        <p>um desenvolvedor web</p>
+      </section>
+  
+      <!-- END WELCOME SECTION -->
+  
+      <!-- START PROJECTS SECTION -->
+  
+      <section id="projects" class="projects-section">
+        <h2 class="projects-section-header">Estes são alguns dos meus projetos. (Passe o mouse em cima para mais informações.)</h2>
+        <div class="projects-container">
+            <button id="prev">&#60</button>
+            <div class="projects-slide">
+            <img id="img-projects" src="assets/imgs/teste1.jpg" alt="">
+            <div>
+                <h3 id="projects-title">Projeto 1</h2>
+                <p id="projects-description">PROJETO 1 description.</p>
+            </div>   
+            </div>
+        <button id="next">&#62</button>
+        </div>
+      </section>
+  
+      <!-- END PROJECTS SECTION -->
+  
+      <!-- START CONTACT SECTION -->
+  
+      <section id="contact" class="contact-section">
+        
+      </section>
+  
+      <!-- END CONTACT SECTION -->
+  
+      <!-- START FOOTER SECTION -->
+  
+      <footer>
+        <p>© Pedro Senciano - 2024</p>
+      </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
