@@ -106,47 +106,111 @@ body, html {
 /* /WELCOME SECTION */
 
 /* PROJECTS SECTION */
-    .projects-section {
-        background-color: var(--brand-dark);
-        height: 100vh;
-    }
 
-    .projects-section h2 {
-        text-align: center;
-        color: var(--white);
-        padding: 25px;
-    }
 
-    .projects-container {
-        display: flex;
-        justify-content: center;
-    }
 
-    .projects-container button{
-        font-size: 6rem;
-        background-color: #00000048;
-        color: var(--white);
-        border: none;
-        padding: 20px;
-    }
 
-    .projects-container button:hover {
-        color: #430d9b;
-        cursor: pointer;
-    }
 
-    /* inside part */
-    .projects-slide {
-        background-color: var(--brand-blue-dark);
-        width: 1000px;
-        height: 626px;
-    }
 
-    .projects-slide #img-projects {
-        width: 1000px;
-        height: 563px;
-        object-fit: contain;
-    }
+
+
+
+
+
+
+
+
+.projects-section {
+    background-color: var(--brand-dark);
+    height: 80vh;
+}
+
+.projects-section h2 {
+    padding: 35px;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    margin: auto;
+}
+
+.projects-container button {
+    margin: 20px;
+    background-color: #00000000;
+    border: none;
+    font-size: 5rem;
+    color: var(--white);
+}
+
+.projects-container button:hover {
+    color: var(--brand-secondary);
+    cursor: pointer;
+}
+
+.projects-slide {
+    background-color: var(--brand-blue-dark);
+    position: relative;
+    width: 1000px;
+    height: 563px;
+    overflow: hidden;
+}
+
+.projects-slide:hover .description {
+    visibility: visible;
+}
+
+.projects-slide:hover img {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.projects-slide img {
+    width: 1000px;
+    height: 563px;
+}
+
+.projects-slide .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2817bb;
+    opacity: 0.8;
+    width: 1000px;
+    height: 563px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--white);
+    visibility: hidden;
+}
+
+.project-technologies {
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
 
 
 /* /PROJECTS SECTION */
+
+/* CONTACT SECTION */
+
+/* /CONTACT SECTION */
+
+/* FOOTER */
+footer {
+    background-color: var(--brand-blue-dark);
+}
+/* /FOOTER */
