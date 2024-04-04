@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body, html {
     background-color: var(--brand-base);
     font-family: 'Poppins', sans-serif;
@@ -106,20 +110,6 @@ body, html {
 /* /WELCOME SECTION */
 
 /* PROJECTS SECTION */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .projects-section {
     background-color: var(--brand-dark);
     height: 80vh;
@@ -193,19 +183,69 @@ body, html {
     text-align: center;
     padding: 10px;
 }
-
-
-
-
-
-
-
-
-
-
 /* /PROJECTS SECTION */
 
 /* CONTACT SECTION */
+.contact {
+    background-color: var(--brand-base);
+    margin: 50px;
+}
+
+.contact-container {
+    width: 1000px;
+    margin: auto;
+}
+
+.contact-container .btn:hover {
+    color: var(--white);
+}
+
+.contact-container form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: var(--brand-blue-dark);
+}
+
+.contact-container form button {
+    margin-top: 15px;
+  }
+
+  .contact-container a:hover {
+    opacity: 60%;
+  }
+
+  .contact-container .socials {
+    width: 50%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+
+  .contact-container .left-form,
+.contact-container .right-form {
+  width: 50%;
+}
+
+.contact-title {
+    font-size: 4rem;
+    color: var(--white);
+}
+  
+.right-form input, textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 5px;
+}
+
+.right-form label {
+    color: var(--white);
+}
+
+.btn {
+    background-color: var(--brand-primary);
+    border: none;
+    padding: 5px;
+}
 
 /* /CONTACT SECTION */
 
