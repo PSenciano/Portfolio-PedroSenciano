@@ -11,13 +11,13 @@
     <!-- START NAV -->
 
     <nav id="navbar" class="nav">
-        <span>&#60;PS&#62;</span>
+        <span id="logo">&#60;PS&#62;</span>
         <ul class="nav-list">
         <li>
             <a href="#welcome-section">Home</a>
         </li>
           <li>
-            <a href="#welcome-section">About</a>
+            <a href="#habilities-section">Habilidades</a>
           </li>
           <li>
             <a href="#projects">Projetos</a>
@@ -26,28 +26,35 @@
             <a href="#contact">Contact</a>
           </li>
         </ul>
+        <!-- <span id="lang">lang</span> -->
       </nav>
   
       <!-- END NAV -->
   
       <!-- START WELCOME SECTION -->
   
-      <section id="welcome-section" class="welcome-section">
-        <h1>Olá sou Pedro Senciano</h1>
-        <p>um desenvolvedor web</p>
+      <section id="welcome-section" class="section welcome-section">
+        <div class="presentation">
+          <h1>Olá! Sou Pedro Senciano</h1>
+          <h2>Front-end Developer</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatem sint quasi? Quos laborum fugiat beatae ullam temporibus impedit, accusantium facilis dolore porro ipsum recusandae nobis minima deserunt commodi dignissimos? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum itaque et doloremque! Doloribus dignissimos ea qui aspernatur autem, debitis non excepturi sapiente, nisi impedit provident illo blanditiis aliquid in dolorum.</p>
+        </div>
+        <div class="planet">
+          <img width="400px" src="assets/img/svg/rocket.svg" alt="">
+        </div>
       </section>
   
       <!-- END WELCOME SECTION -->
   
       <!-- START PROJECTS SECTION -->
   
-      <section id="projects" class="projects-section">
+      <section id="projects" class="section projects-section">
         <h2 class="projects-section-header">Estes são alguns dos meus projetos. (Passe o mouse em cima para mais informações.)</h2>
           <div class="projects-container">
             <button id="prev">&#60</button>
             <div class="projects-slide">
               <div id="img-hover">
-                  <img id="img-projects" src="assets/imgs/teste1.jpg" alt="">
+                  <img id="img-projects" src="assets/img/teste1.jpg" alt="">
                   <span class="description">
                     <h3 id="projects-title">Hello</h3>
                     <p id="projects-description">Project done with...</p>
@@ -64,24 +71,28 @@
       <!-- END PROJECTS SECTION -->
   
       <!-- START CONTACT SECTION -->
-        <section class="contact" id="contact">
+        <section class="section contact" id="contact">
             <div class="contact-container">
               <form class="" action="">
                 <div class="left-form">
                   <h4 class="contact-title">Contato</h4>
                   <div class="socials">
                     <a href="#" target="_blank">
-                      <img width="50" src="assets/imgs/svg/git.svg" alt="GitHub">
+                      <img width="50" src="assets/img/svg/git.svg" alt="GitHub">
                     </a>
                     <a href="#" target="_blank">
-                      <img width="50" src="assets/imgs/svg/ln.svg" alt="Linkedin">
+                      <img width="50" src="assets/img/svg/ln.svg" alt="Linkedin">
                     </a>
                     <a href="#" target="_blank">
-                      <img width="50" src="assets/imgs/svg/curriculum.svg" alt="Curriculum">
+                      <img width="50" src="assets/img/svg/curriculum.svg" alt="Curriculum">
                     </a>
                   </div>
                 </div>
                 <div class="right-form">
+                  <label for="">
+                    Name:
+                    <input type="text">
+                  </label>
                   <label for="">
                     Email:
                     <input type="email">

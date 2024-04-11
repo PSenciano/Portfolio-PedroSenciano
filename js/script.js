@@ -2,21 +2,21 @@
 const projects = [
     {
         id: 0,
-        img: "assets/imgs/teste1.jpg",
+        img: "assets/img/teste1.jpg",
         name: "Projeto 1",
         text: "PROJETO 1 description.",
         tech: "Technologies 1",
     },
     {
         id: 1,
-        img: "assets/imgs/teste2.jpg",
+        img: "assets/img/teste2.jpg",
         name: "Projeto 2",
         text: "PROJETO 2 description.",
         tech: "Technologies 2",
     },
     {
         id: 2,
-        img: "assets/imgs/teste3.jpg",
+        img: "assets/img/teste3.jpg",
         name: "Projeto 3",
         text: "PROJETO 3 description.",
         tech: "Technologies 3",
