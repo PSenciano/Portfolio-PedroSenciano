@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Pedro Senciano</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/img/rocket.ico" type="image/x-icon">
+  <title>Portfólio - Pedro Senciano</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
-    <!-- START NAV -->
-
+  <!-- START NAV -->
+  <header>
     <nav id="navbar" class="nav">
+      <div class="logo">
         <span id="logo">&#60;PS&#62;</span>
-        <ul class="nav-list">
-        <li>
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li>
             <a href="#welcome-section">Home</a>
-        </li>
+          </li>
           <li>
             <a href="#habilities">Habilidades</a>
           </li>
@@ -26,123 +35,148 @@
             <a href="#contact">Contact</a>
           </li>
         </ul>
-        <!-- <span id="lang">lang</span> -->
-      </nav>
-  
-      <!-- END NAV -->
-  
-      <!-- START WELCOME SECTION -->
-  
-      <section id="welcome-section" class="section welcome-section">
-        <div class="presentation">
-          <h1>Olá! Sou Pedro Senciano</h1>
-          <h2>Front-end Developer</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatem sint quasi? Quos laborum fugiat beatae ullam temporibus impedit, accusantium facilis dolore porro ipsum recusandae nobis minima deserunt commodi dignissimos? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum itaque et doloremque! Doloribus dignissimos ea qui aspernatur autem, debitis non excepturi sapiente, nisi impedit provident illo blanditiis aliquid in dolorum.</p>
-        </div>
-        <div class="planet">
-          <img width="400px" src="assets/img/svg/rocket.svg" alt="Imagem de um foguete">
-        </div>
-      </section>
-      <div class="rrrr">
-        <hr>
       </div>
-      
-      <!-- END WELCOME SECTION -->
+      <div class="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="dropdown-menu open">
+        <li>
+          <a href="#welcome-section">Home</a>
+        </li>
+        <li>
+          <a href="#habilities">Habilidades</a>
+        </li>
+        <li>
+          <a href="#projects">Projetos</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </div>
+    </nav>
+  </header>
 
-      <!-- HABILITIES I WORKED -->
-      <section class="section habilities-section" id="habilities">
-        <h2 class="habilities-section-header">Algumas das tecnologias que já trabalhei</h2>
-        <div class="habilities-container">
-          <div class="habilities-list">
-            <ul>
-              <li><img width="35px" src="assets/img/svg/html.svg" alt="HTML logo"> HTML</li>
-              <li><img width="35px" src="assets/img/svg/css.svg" alt="CSS logo"> CSS</li>
-              <li><img width="35px" src="assets/img/svg/js.svg" alt="JS logo"> JavaScript</li>
-              <li><img width="35px" src="assets/img/svg/react.svg" alt="React logo"> React Native</li>
-              <li><img width="35px" src="assets/img/svg/react.svg" alt="React logo"> React JS</li>
-              <li><img width="35px" src="assets/img/svg/sql.svg" alt="SQL logo"> SQL</li>
-              <li><img width="35px" src="assets/img/svg/python.svg" alt="Python logo"> Python</li>
-              <li><img width="35px" src="assets/img/svg/nodejs.svg" alt="NodeJS logo"> Node JS</li>
-            </ul>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, officiis et! Nobis molestiae sed natus eligendi sint adipisci deleniti libero, officiis doloremque voluptas quibusdam aspernatur, maxime architecto, beatae modi dignissimos?</p>
-          </div>
-          <div class="habilities-figure">
-            <img width="400px" src="assets/img/planet-gif.gif" alt="plannet">
-          </div>
-          
+  <!-- END NAV -->
+
+  <!-- START WELCOME SECTION -->
+
+  <section id="welcome-section" class="section welcome-section">
+    <div class="presentation">
+      <h1>Olá! Sou Pedro Senciano</h1>
+      <h2>Front-end Developer</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatem sint quasi? Quos laborum fugiat
+        beatae ullam temporibus impedit, accusantium facilis dolore porro ipsum recusandae nobis minima deserunt commodi
+        dignissimos? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum itaque et doloremque! Doloribus
+        dignissimos ea qui aspernatur autem, debitis non excepturi sapiente, nisi impedit provident illo blanditiis
+        aliquid in dolorum.</p>
+    </div>
+    <div class="rocket">
+      <img class="welcome-rocket" width="400px" src="assets/img/svg/rocket.svg" alt="Imagem de um foguete">
+    </div>
+  </section>
+  <div class="rrrr">
+    <hr>
+  </div>
+
+  <!-- END WELCOME SECTION -->
+
+  <!-- HABILITIES I WORKED -->
+  <section class="section habilities-section" id="habilities">
+    <h2 class="habilities-section-header">Algumas das tecnologias que já trabalhei</h2>
+    <div class="habilities-container">
+      <div class="habilities-list">
+        <ul>
+          <li><img width="35px" src="assets/img/svg/html.svg" alt="HTML logo"> HTML</li>
+          <li><img width="35px" src="assets/img/svg/css.svg" alt="CSS logo"> CSS</li>
+          <li><img width="35px" src="assets/img/svg/js.svg" alt="JS logo"> JavaScript</li>
+          <li><img width="35px" src="assets/img/svg/react.svg" alt="React logo"> React Native</li>
+          <li><img width="35px" src="assets/img/svg/react.svg" alt="React logo"> React JS</li>
+          <li><img width="35px" src="assets/img/svg/sql.svg" alt="SQL logo"> SQL</li>
+          <li><img width="35px" src="assets/img/svg/python.svg" alt="Python logo"> Python</li>
+          <li><img width="35px" src="assets/img/svg/nodejs.svg" alt="NodeJS logo"> Node JS</li>
+        </ul>
+      </div>
+      <div class="habilities-figure">
+        <img class="habilities-planet" width="400px" src="assets/img/planet-gif.gif" alt="plannet">
+      </div>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, officiis et! Nobis molestiae sed natus eligendi
+      sint adipisci deleniti libero, officiis doloremque voluptas quibusdam aspernatur, maxime architecto, beatae modi
+      dignissimos?</p>
+  </section>
+  <hr>
+  <!-- /HABILITIES I WORKED -->
+
+  <!-- START PROJECTS SECTION -->
+  <section id="projects" class="section projects-section">
+    <h2 class="projects-section-header">Estes são alguns dos meus projetos. <span id="hover-mouse">(Passe o mouse para
+        mais informações)</span></h2>
+    <div class="projects-container">
+      <button id="prev">&#60</button>
+      <div class="projects-slide">
+        <div id="img-hover">
+          <img id="img-projects" src="assets/img/teste1.jpg" alt="Imagem do Projeto">
+          <span class="description">
+            <h3 id="projects-title">Hello</h3>
+            <p id="projects-description">Project done with...</p>
+          </span>
         </div>
-      </section>
-      <hr>
-      <!-- /HABILITIES I WORKED -->
-  
-      <!-- START PROJECTS SECTION -->
-      <section id="projects" class="section projects-section">
-        <h2 class="projects-section-header">Estes são alguns dos meus projetos. (Passe o mouse em cima para mais informações.)</h2>
-          <div class="projects-container">
-            <button id="prev">&#60</button>
-            <div class="projects-slide">
-              <div id="img-hover">
-                  <img id="img-projects" src="assets/img/teste1.jpg" alt="">
-                  <span class="description">
-                    <h3 id="projects-title">Hello</h3>
-                    <p id="projects-description">Project done with...</p>
-                  </span> 
-              </div>
-            </div>
-            <button id="next">&#62</button>
-          </div>
-          <div class="project-technologies" id="technologies">
-            <h5>Technologies 1</h5>
-          </div>
-      </section>
-      <hr>
-      <!-- END PROJECTS SECTION -->
-  
-      <!-- START CONTACT SECTION -->
-        <section class="section contact" id="contact">
-            <div class="contact-container">
-              <form class="" action="">
-                <div class="left-form">
-                  <h4 class="contact-title">Contato</h4>
-                  <div class="socials">
-                    <a href="#" target="_blank">
-                      <img width="50" src="assets/img/svg/git.svg" alt="GitHub">
-                    </a>
-                    <a href="#" target="_blank">
-                      <img width="50" src="assets/img/svg/ln.svg" alt="Linkedin">
-                    </a>
-                    <a href="#" target="_blank">
-                      <img width="50" src="assets/img/svg/curriculum.svg" alt="Curriculum">
-                    </a>
-                  </div>
-                </div>
-                <div class="right-form">
-                  <label for="">
-                    Name:
-                    <input type="text">
-                  </label>
-                  <label for="">
-                    Email:
-                    <input type="email">
-                  </label>
-                  <label for="">Message:
-                    <textarea name="" id="" rows="10"></textarea>
-                  </label>
-                  <button class="btn">
-                    Enviar
-                  </button>
-                </div>
-              </form>
-            </div>
-        </section>
-      <!-- END CONTACT SECTION -->
+      </div>
+      <button id="next">&#62</button>
+    </div>
+    <div class="project-technologies" id="technologies">
+      <h5>Technologies 1</h5>
+    </div>
+  </section>
+  <hr>
+  <!-- END PROJECTS SECTION -->
 
-      <!-- START FOOTER SECTION -->
-  
-      <footer>
-        <p>© Pedro Senciano - 2024 &#60;/PS&#62;</p>
-      </footer>
+  <!-- START CONTACT SECTION -->
+  <section class="section contact" id="contact">
+    <div class="contact-container">
+      <form class="" action="">
+        <div class="left-form">
+          <h4 class="contact-title">Contato</h4>
+          <div class="socials">
+            <a href="#" target="_blank">
+              <img width="50" src="assets/img/svg/git.svg" alt="GitHub">
+            </a>
+            <a href="#" target="_blank">
+              <img width="50" src="assets/img/svg/ln.svg" alt="Linkedin">
+            </a>
+            <a href="#" target="_blank">
+              <img width="50" src="assets/img/svg/curriculum.svg" alt="Curriculum">
+            </a>
+          </div>
+        </div>
+        <div class="right-form">
+          <label for="name">
+            Name
+            <input type="text" name="name" id="name">
+          </label>
+          <label for="email">
+            Email
+            <input type="email" name="email" id="email">
+          </label>
+          <label for="message">Message
+            <textarea name="message" id="message" rows="10"></textarea>
+          </label>
+          <button class="btn">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- END CONTACT SECTION -->
 
-    <script src="js/script.js"></script>
+  <!-- START FOOTER SECTION -->
+
+  <footer>
+    <p>© Pedro Senciano - 2024 &#60;/PS&#62;</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
+
 </html>

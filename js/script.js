@@ -33,6 +33,11 @@ const tech = document.querySelector('#technologies');
 const prev = document.querySelector("#prev");
 const next = document.querySelector("#next");
 
+//NAV BAR items
+const toggleBtn =  document.querySelector('.toggle-btn');
+const toggleBtnIcon =  document.querySelector('.toggle-btn i');
+const dropDownMenu =  document.querySelector('.dropdown-menu');
+
 //Set Staring Item
 let currentItem = 0;
 
@@ -67,3 +72,13 @@ next.addEventListener('click', function() {
     }
     showProject();
 });
+
+//NAV BAR Function 
+toggleBtn.onclick = function () {
+    dropDownMenu.classList.toggle('open');
+    const isOpen = dropDownMenu.classList.contains('open');
+
+    toggleBtnIcon.classList = isOpen
+    ? 'fa-solid fa-xmark'
+    : 'fa-solid fa-bars'
+}
