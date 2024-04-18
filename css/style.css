@@ -395,11 +395,6 @@ footer {
         width: 900px;
     }
 
-    .contact {
-        margin: 50px;
-        background: var(--purple);
-    }
-
     /* /HABILITIES */
 
     .habilities-container {
@@ -424,7 +419,6 @@ footer {
 
     .projects-slide img {
         width: 700px;
-
     }
 
     .projects-slide .description {
@@ -437,6 +431,8 @@ footer {
         margin: 20px 10px;
         height: 600px;
         min-height: 550px;
+        background: var(--purple);
+        border-radius: 50px;
     }
 
     .contact-container {
