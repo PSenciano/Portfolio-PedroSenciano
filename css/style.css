@@ -145,6 +145,7 @@ hr {
     font-style: italic;
     font-size: 1.1rem;
     color: var(--light-gray);
+    background-color: var(--base);
 }
 
 .planet {
@@ -164,6 +165,7 @@ hr {
 .habilities-section p {
     width: 50%;
     margin-top: 50px;
+    background-color: var(--base);
 }
 
 .habilities-section div {
@@ -176,14 +178,14 @@ hr {
 
 .habilities-container {
     display: grid;
-    background: linear-gradient(-90deg, #ac2174e5, #4a2fbd);
+    background: #7e2372;
     justify-content: center;
     width: 1200px;
     height: 500px;
     grid-template-columns: 2fr 1fr;
     justify-items: center;
     align-items: center;
-    border: 1px solid var(--light-gray);
+    border-radius: 200px;
 }
 
 .habilities-list ul {
@@ -288,8 +290,7 @@ hr {
 .contact-container {
     width: 1200px;
     margin: auto;
-    background: linear-gradient(90deg, #ac2174e5, #4a2fbd);
-    border: 1px solid var(--light-gray);
+    background: linear-gradient(90deg, #ac2174e5, #4a2fbd80);
 }
 
 .contact-container .btn:hover {
@@ -335,12 +336,13 @@ textarea {
 }
 
 .btn {
-    background: linear-gradient(-90deg, #ac2174e5, #4a2fbd);
+    background: var(--pink);
     padding: 5px;
     border: 1px solid var(--black);
     transition: 1s;
     font-size: 1.2rem;
     color: var(--black);
+    background: linear-gradient(-90deg, #ac2174e5, #4a2fbd);
 }
 
 .btn:hover {
@@ -440,7 +442,6 @@ footer {
     /* /CONTACT */
     .contact {
         margin: 20px 10px;
-        border: 1px solid var(--light-gray);
         height: 600px;
         min-height: 550px;
         background: linear-gradient(90deg, #ac2174e5, #4a2fbd);
