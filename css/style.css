@@ -223,7 +223,7 @@ hr {
     background-color: #00000000;
     border: none;
     font-size: 5rem;
-    color: var(--purple);
+    color: var(--light-gray);
     margin: 10px;
 }
 
@@ -342,7 +342,7 @@ textarea {
 }
 
 .btn:hover {
-    background: #ac2174;
+    background: var(--pink);
     cursor: pointer;
     border: 1px solid var(--light-gray);
     transition: 1s;
