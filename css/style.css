@@ -3,7 +3,7 @@
     --black: #000;
     --light-gray: #acacac;
     --base: #121212;
-    --scroll: #121212c0;
+    --trans-base: #121212c0;
     --pink: #aa367c;
     --purple: #4a2fbd;
     --blue: #144db2;
@@ -40,11 +40,11 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: linear-gradient(180deg, #aa367c, #4a2fbd);
+    background: linear-gradient(180deg, #ac2174, #4a2fbd);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--scroll);
+    background: var(--trans-base);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -65,6 +65,8 @@ html {
     width: 100vw;
     height: 80px;
     z-index: 99;
+    background-color: var(--trans-base);
+    backdrop-filter: blur(15px);
 }
 
 .nav ul li {
@@ -75,12 +77,11 @@ html {
 .nav ul li a {
     color: #fff;
     padding: 5px;
-    background-color: var(--base);
-    border: 1px solid var(--light-gray);
+    
 }
 
 .nav ul li a:hover {
-    background: linear-gradient(90deg, #aa367c, #4a2fbd);
+    background: linear-gradient(90deg, #ac2174e5, #4a2fbd);
 }
 
 .toggle-btn {
@@ -102,7 +103,7 @@ html {
 hr {
     width: 60vw;
     margin: auto;
-    background: linear-gradient(90deg, #aa367c, #4a2fbd);
+    background: linear-gradient(90deg, #ac2174e5, #4a2fbd);
     height: 5px;
     border: none;
 }
@@ -128,7 +129,7 @@ hr {
     padding: 7px;
     overflow: hidden;
     border: 1px solid var(--light-gray);
-    background: linear-gradient(90deg, #aa367c, #4a2fbd);
+    background: linear-gradient(90deg, #ac2174e5, #4a2fbd);
 }
 
 #welcome-section p {
@@ -167,7 +168,7 @@ hr {
 
 .habilities-container {
     display: grid;
-    background: linear-gradient(-90deg, #aa367c, #4a2fbd);
+    background: linear-gradient(-90deg, #ac2174e5, #4a2fbd);
     justify-content: center;
     width: 1200px;
     height: 500px;
@@ -257,7 +258,7 @@ hr {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, #aa367c80 -5.91%, #4a2fbd80 111.58%);
+    background: linear-gradient(90deg, #ac2174e5, #4a2fbd80);
     width: 1200px;
     height: 100%;
     display: flex;
@@ -279,7 +280,7 @@ hr {
 .contact-container {
     width: 1200px;
     margin: auto;
-    background: linear-gradient(90deg, #aa367c, #4a2fbd);
+    background: linear-gradient(90deg, #ac2174e5, #4a2fbd);
     border: 1px solid var(--light-gray);
 }
 
@@ -326,7 +327,7 @@ textarea {
 }
 
 .btn {
-    background: linear-gradient(-90deg, #aa367c, #4a2fbd);
+    background: linear-gradient(-90deg, #ac2174e5, #4a2fbd);
     padding: 5px;
     border: 1px solid var(--black);
     transition: 1s;
@@ -335,7 +336,7 @@ textarea {
 }
 
 .btn:hover {
-    background: linear-gradient(90deg, #aa367c, #4a2fbd);
+    background: linear-gradient(90deg, #ac2174e5, #4a2fbd);
     cursor: pointer;
     border: 1px solid var(--light-gray);
     transition: 1s;
@@ -345,7 +346,7 @@ textarea {
 
 /* FOOTER */
 footer {
-    background: linear-gradient(90deg, #aa367c, #4a2fbd);
+    background: linear-gradient(90deg, #ac2174e5, #4a2fbd);
     text-align: center;
     padding: 5px;
 }
@@ -428,7 +429,7 @@ footer {
         border: 1px solid var(--light-gray);
         height: 600px;
         min-height: 550px;
-        background: linear-gradient(90deg, #aa367c, #4a2fbd);
+        background: linear-gradient(90deg, #ac2174e5, #4a2fbd);
     }
 
     .contact-container {
@@ -585,8 +586,6 @@ footer {
     header, .nav {
         width: 100%;
         height: 60px;
-        background-color: #121212;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.171);
     }
 
     .toggle-btn {
@@ -603,13 +602,11 @@ footer {
         text-align: center;
         top: 90px;
         width: 300px;
-        background-color: #121212c4;
-        backdrop-filter: blur(15px);
         border-radius: 10px;
         overflow: hidden;
-        transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         z-index: 99;
         border: 1px solid var(--light-gray);
+        background: linear-gradient(90deg, #ac2174d2, #4a2fbd);
     }
 
     .open {
@@ -627,8 +624,4 @@ footer {
         margin: 5px;
     }
 
-    .dropdown-menu ul li a {
-        background: none;
-        border: none;
-    }
 }
