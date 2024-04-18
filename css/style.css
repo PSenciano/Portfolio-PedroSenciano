@@ -1,6 +1,4 @@
 :root {
-    --white: #fff;
-    --black: #000;
     --light-gray: #acacac;
     --base: #121212;
     --trans-base: #121212c0;
@@ -30,7 +28,7 @@ html {
     background-size: cover;
     background-attachment: fixed;
     font-family: sans-serif;
-    color: var(--white);
+    color: #fff;
 }
 
 .comet {
@@ -85,7 +83,7 @@ html {
 .nav ul li a {
     color: #fff;
     padding: 5px;
-    
+
 }
 
 .nav ul li a:hover {
@@ -275,7 +273,6 @@ hr {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: var(--white);
     transition: 0.5s ease-in-out;
 }
 
@@ -321,7 +318,6 @@ hr {
 
 .contact-title {
     font-size: 4rem;
-    color: var(--white);
 }
 
 .right-form input,
@@ -335,10 +331,10 @@ textarea {
 .btn {
     background: var(--base);
     padding: 5px;
-    border: 1px solid var(--white);
+    border: 1px solid #fff;
     transition: 1s;
     font-size: 1.2rem;
-    color: var(--white);
+    color: #fff;
 }
 
 .btn:hover {
@@ -592,8 +588,11 @@ footer {
     }
 }
 
+/* NAV MENU */
 @media screen and (max-width: 650px) {
-    header, .nav {
+
+    header,
+    .nav {
         width: 100%;
         height: 60px;
     }
@@ -616,7 +615,7 @@ footer {
         overflow: hidden;
         z-index: 99;
         border: 1px solid var(--light-gray);
-        background: linear-gradient(90deg, #ac2174d2, #4a2fbd);
+        background: var(--base);
     }
 
     .open {
