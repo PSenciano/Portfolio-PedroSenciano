@@ -25,12 +25,20 @@ a {
 body,
 html {
     background-color: var(--base);
-    background: url("../assets/img/banner-bg.png");
+    background: url("../assets/img/banner.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     font-family: sans-serif;
     color: var(--white);
+}
+
+.comet {
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    width: 100px;
+    transform: rotate(90deg);
 }
 
 /* SCROLL */
@@ -355,6 +363,12 @@ footer {
 
 
 /* MEDIA QUERIES */
+
+@media(max-width: 1600px) {
+    .comet {
+        display: none;
+    }
+}
 
 @media(max-width: 1350px) {
 
