@@ -92,13 +92,12 @@ function closeMenu () {
     : 'fa-solid fa-bars'
 }
 
-
-
-
-
-
-
-
+//Aimation
+const elements = document.querySelectorAll('.hidden');
+const udyElements = document.querySelectorAll('.hidden-udy');
+const duyElements = document.querySelectorAll('.hidden-duy');
+const lrxElements = document.querySelectorAll('.hidden-lrx');
+const rlxElements = document.querySelectorAll('.hidden-rlx');
 
 const myObserver = new IntersectionObserver( (entries) => {
     entries.forEach( (entry) => {
@@ -124,23 +123,8 @@ const myObserver = new IntersectionObserver( (entries) => {
     })
 })
 
-const elements = document.querySelectorAll('.hidden');
-const udyElements = document.querySelectorAll('.hidden-udy');
-const duyElements = document.querySelectorAll('.hidden-duy');
-const lrxElements = document.querySelectorAll('.hidden-lrx');
-const rlxElements = document.querySelectorAll('.hidden-rlx');
-
-
 elements.forEach( (element) => myObserver.observe(element));
 udyElements.forEach( (element) => myObserver.observe(element));
 duyElements.forEach( (element) => myObserver.observe(element));
 lrxElements.forEach( (element) => myObserver.observe(element));
 rlxElements.forEach( (element) => myObserver.observe(element));
-
-
-
-
-
-
-
-
