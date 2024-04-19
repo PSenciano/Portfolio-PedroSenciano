@@ -276,6 +276,21 @@ hr {
     transition: 0.5s ease-in-out;
 }
 
+.project-button {
+    margin: 20px;
+}
+
+.project-button a {
+    background-color: var(--base); 
+    padding: 8px;
+    margin: 0 5px;
+    border-radius: 10px 0;
+}
+
+.project-button a:hover {
+    background-color: var(--blue);
+}
+
 .project-technologies {
     text-align: center;
     padding: 10px;
