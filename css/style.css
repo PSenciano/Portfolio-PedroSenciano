@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
 :root {
     --light-gray: #acacac;
     --base: #121212;
@@ -6,7 +8,7 @@
     --purple: #2e2168;
     --blue: #144db2;
     --pink-purple-gradient: linear-gradient(90deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-    --font-standart: font-family;
+    font-family: "Electrolize", sans-serif;
 }
 
 * {
@@ -83,7 +85,7 @@ html {
 .nav ul li a {
     color: #fff;
     padding: 5px;
-
+    font-family: "Electrolize", sans-serif;
 }
 
 .nav ul li a:hover {
@@ -149,7 +151,6 @@ hr {
 .planet {
     margin-left: 45px;
 }
-
 /* /WELCOME SECTION */
 
 /* HABILITIES SECTION */
@@ -370,6 +371,60 @@ footer {
 
 /* /FOOTER */
 
+/* ANIMATIONS */
+
+/* normal */
+.hidden {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show-animation {
+    opacity: 1;
+    transition: 4s;
+}
+
+/* up and down y*/
+.hidden-udy {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 2s;
+}
+
+.hidden-duy {
+    opacity: 0;   
+    transform: translateY(50%);
+    transition: all 2s;
+}
+
+.show-animation-y {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition: 3s;
+}
+
+/* left and right y*/
+.hidden-lrx {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.hidden-rlx {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 3s;
+}
+
+.show-animation-x {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: 2s;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -383,7 +438,7 @@ footer {
 
     /* /WELCOME */
     .welcome-rocket {
-        width: 300px;
+        height: 300px;
     }
 
     /* /PROJECTS */
@@ -502,7 +557,7 @@ footer {
 
     /* /WELCOME */
     .welcome-rocket {
-        width: 200px;
+        height: 300px;
     }
 
     /* /PROJECTS */
@@ -578,7 +633,7 @@ footer {
     }
 
     .welcome-rocket {
-        width: 300px;
+        height: 300px;
     }
 
     .welcome-section {
