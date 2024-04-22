@@ -33,14 +33,6 @@ html {
     color: #fff;
 }
 
-.comet {
-    position: fixed;
-    left: 50px;
-    bottom: 50px;
-    width: 100px;
-    transform: rotate(90deg);
-}
-
 /* SCROLL */
 
 ::-webkit-scrollbar {
@@ -427,18 +419,11 @@ footer {
 
 
 /* MEDIA QUERIES */
-
-@media(max-width: 1600px) {
-    .comet {
-        display: none;
-    }
-}
-
 @media(max-width: 1350px) {
 
     /* /WELCOME */
     .welcome-rocket {
-        height: 300px;
+        height: 250px;
     }
 
     /* /PROJECTS */
@@ -555,11 +540,6 @@ footer {
 
 @media(max-width: 860px) {
 
-    /* /WELCOME */
-    .welcome-rocket {
-        height: 300px;
-    }
-
     /* /PROJECTS */
     .projects-section {
         display: inline;
@@ -637,10 +617,6 @@ footer {
 
     .rocket {
         margin: 50px auto;
-    }
-
-    .welcome-rocket {
-        height: 300px;
     }
 
     .welcome-section {
