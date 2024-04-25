@@ -4,7 +4,7 @@ const projects = [
         id: 0,
         img: "assets/img/ironForgeAcademy.jpg",
         name: "Projeto IronForgeAcademy",
-        text: "Projeto de um site de uma academia ficticia chamada Iron Forge Academy, voltado para fins de aprendizado.",
+        text: "Projeto de um site original de uma academia ficticia chamada Iron Forge Academy, voltado para fins de aprendizado.",
         gitLink: "https://github.com/PSenciano/projetoIronForgeAcademy",
         deployLink: "https://www.subirlinkdoprojeto.com",
         tech: "Technologies 1",
