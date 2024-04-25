@@ -2,9 +2,11 @@
 const projects = [
     {
         id: 0,
-        img: "assets/img/teste1.jpg",
-        name: "Projeto 1",
-        text: "PROJETO 1 description.",
+        img: "assets/img/ironForgeAcademy.jpg",
+        name: "Projeto IronForgeAcademy",
+        text: "Projeto de um site de uma academia ficticia chamada Iron Forge Academy, voltado para fins de aprendizado.",
+        gitLink: "https://github.com/PSenciano/projetoIronForgeAcademy",
+        deployLink: "https://www.subirlinkdoprojeto.com",
         tech: "Technologies 1",
     },
     {
@@ -12,6 +14,8 @@ const projects = [
         img: "assets/img/teste2.jpg",
         name: "Projeto 2",
         text: "PROJETO 2 description.",
+        gitLink: "https://www.subirlinkdoprojeto.com",
+        deployLink: "https://www.subirlinkdoprojeto.com",
         tech: "Technologies 2",
     },
     {
@@ -19,6 +23,8 @@ const projects = [
         img: "assets/img/teste3.jpg",
         name: "Projeto 3",
         text: "PROJETO 3 description.",
+        gitLink: "https://www.subirlinkdoprojeto.com",
+        deployLink: "https://www.subirlinkdoprojeto.com",
         tech: "Technologies 3",
     },   
 ]
@@ -29,6 +35,9 @@ const img = document.querySelector("#img-projects");
 const projectsTitle = document.querySelector("#projects-title");
 const description = document.querySelector("#projects-description");
 const tech = document.querySelector('#technologies');
+
+const gitRepository = document.querySelector('#git-link');
+const deployLink = document.querySelector('#deploy-link');
 
 const prev = document.querySelector("#prev");
 const next = document.querySelector("#next");
@@ -52,6 +61,8 @@ function showProject() {
     img.src = item.img;
     projectsTitle.textContent = item.name;
     description.textContent = item.text;
+    gitRepository.href = item.gitLink;
+    deployLink.href = item.deployLink;
     tech.textContent = item.tech;
 }
 
