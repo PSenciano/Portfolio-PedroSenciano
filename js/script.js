@@ -3,20 +3,18 @@ const projects = [
     {
         id: 0,
         img: "assets/img/ironForgeAcademy.jpg",
-        name: "Projeto IronForgeAcademy",
         text: "Projeto de um site original de uma academia ficticia chamada Iron Forge Academy, voltado para fins de aprendizado e totalmente responsivo.",
         gitLink: "https://github.com/PSenciano/projetoIronForgeAcademy",
         deployLink: "https://www.subirlinkdoprojeto.com",
-        tech: "Technologies 1",
+        title: "Projeto IronForgeAcademy",
     },
     {
         id: 1,
         img: "assets/img/cacauSabor.jpg",
-        name: "Projeto Cacau Sabor",
         text: "Projeto de um site original de uma chocolateria ficticia Cacau Sabor, voltado para fins de aprendizado e totalmente responsivo.",
         gitLink: "https://github.com/PSenciano/projetoCacauSabor",
         deployLink: "https://www.subirlinkdoprojeto.com",
-        tech: "Technologies 2",
+        title: "Projeto Cacau Sabor",
     },
     {
         id: 2,
@@ -25,16 +23,15 @@ const projects = [
         text: "PROJETO 3 description.",
         gitLink: "https://www.subirlinkdoprojeto.com",
         deployLink: "https://www.subirlinkdoprojeto.com",
-        tech: "Technologies 3",
+        title: "Technologies 3",
     },   
 ]
 
 //Select Item
 
 const img = document.querySelector("#img-projects");
-const projectsTitle = document.querySelector("#projects-title");
 const description = document.querySelector("#projects-description");
-const tech = document.querySelector('#technologies');
+const projectTitle = document.querySelector('#project-title');
 
 const gitRepository = document.querySelector('#git-link');
 const deployLink = document.querySelector('#deploy-link');
@@ -59,11 +56,10 @@ window.addEventListener("DOMContentLoaded", function() {
 function showProject() {
     const item = projects[currentItem];
     img.src = item.img;
-    projectsTitle.textContent = item.name;
     description.textContent = item.text;
     gitRepository.href = item.gitLink;
     deployLink.href = item.deployLink;
-    tech.textContent = item.tech;
+    projectTitle.textContent = item.title;
 }
 
 //Prev Button
