@@ -16,15 +16,7 @@ const projects = [
         deployLink: "https://www.subirlinkdoprojeto.com",
         title: "Projeto Cacau Sabor",
     },
-    {
-        id: 2,
-        img: "assets/img/teste3.jpg",
-        name: "Projeto 3",
-        text: "PROJETO 3 description.",
-        gitLink: "https://www.subirlinkdoprojeto.com",
-        deployLink: "https://www.subirlinkdoprojeto.com",
-        title: "Technologies 3",
-    },   
+     
 ]
 
 //Select Item
