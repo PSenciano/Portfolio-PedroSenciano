@@ -1,76 +1,7 @@
-//Projects Informations
-const projects = [
-    {
-        id: 0,
-        img: "assets/img/ironForgeAcademy.jpg",
-        text: "Projeto de um site original de uma academia ficticia chamada Iron Forge Academy, voltado para fins de aprendizado e totalmente responsivo.",
-        gitLink: "https://github.com/PSenciano/projetoIronForgeAcademy",
-        deployLink: "https://www.subirlinkdoprojeto.com",
-        title: "Projeto IronForgeAcademy",
-    },
-    {
-        id: 1,
-        img: "assets/img/cacauSabor.jpg",
-        text: "Projeto de um site original de uma chocolateria ficticia Cacau Sabor, voltado para fins de aprendizado e totalmente responsivo.",
-        gitLink: "https://github.com/PSenciano/projetoCacauSabor",
-        deployLink: "https://www.subirlinkdoprojeto.com",
-        title: "Projeto Cacau Sabor",
-    },
-     
-]
-
-//Select Item
-
-const img = document.querySelector("#img-projects");
-const description = document.querySelector("#projects-description");
-const projectTitle = document.querySelector('#project-title');
-
-const gitRepository = document.querySelector('#git-link');
-const deployLink = document.querySelector('#deploy-link');
-
-const prev = document.querySelector("#prev");
-const next = document.querySelector("#next");
-
 //NAV BAR items
 const toggleBtn = document.querySelector('.toggle-btn');
 const toggleBtnIcon = document.querySelector('.toggle-btn i');
 const dropDownMenu = document.querySelector('.dropdown-menu');
-
-//Set Staring Item
-let currentItem = 0;
-
-//Load Initial Item
-window.addEventListener("DOMContentLoaded", function() {
-    showProject();
-});
-
-//Show Project Function
-function showProject() {
-    const item = projects[currentItem];
-    img.src = item.img;
-    description.textContent = item.text;
-    gitRepository.href = item.gitLink;
-    deployLink.href = item.deployLink;
-    projectTitle.textContent = item.title;
-}
-
-//Prev Button
-prev.addEventListener('click', function() {
-    currentItem--;
-    if(currentItem < 0) {
-        currentItem = projects.length - 1;
-    }
-    showProject();
-});
-
-//Next Button
-next.addEventListener('click', function() {
-    currentItem++;
-    if(currentItem > projects.length - 1) {
-        currentItem = 0;
-    }
-    showProject();
-});
 
 //NAV BAR Function 
 toggleBtn.onclick = function () {
