@@ -136,6 +136,7 @@ hr {
     font-size: 1.1rem;
     color: var(--light-gray);
     background-color: var(--base);
+    margin: 0;
 }
 
 .planet {
@@ -155,6 +156,7 @@ hr {
     width: 50%;
     margin-top: 50px;
     background-color: var(--base);
+    text-align: center;
 }
 
 .habilities-section div {
@@ -187,10 +189,6 @@ hr {
     list-style: none;
 }
 
-.habilities-container p {
-    margin-top: 85px;
-}
-
 /* /HABILITIES SECTION */
 
 /* PROJECTS SECTION */
@@ -198,6 +196,11 @@ hr {
 .projects-section {
     padding: 60px;
     height: 100%;
+}
+
+.projects-section-header {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .projects-container, .projects-card {
@@ -220,8 +223,31 @@ hr {
     width: 40%;
 }
 
+.projects-info {
+    display: grid;
+}
+
 .projects-info h2, p {
     margin: 15px;
+}
+
+
+.projects-info .projects-links {
+    text-align: center;
+
+}
+
+.projects-info a {
+    display: inline-block;
+    width: 85px;
+    padding: 7px 0;
+    text-align: center;
+    background-color: var(--base);
+    margin-bottom: 10px;
+}
+
+.projects-info a:hover {
+    background-color: var(--blue);
 }
 
 /* /PROJECTS SECTION */
@@ -499,6 +525,11 @@ footer {
         display: none;
         grid-template-columns: 0fr;
     }
+
+    .habilities-section p {
+        width: 80%;
+        text-align: center;
+    }
 }
 
 @media(max-width: 650px) {
@@ -528,6 +559,7 @@ footer {
         grid-template-columns: 1fr;
         gap: 15px;
     }
+
 }
 
 /* NAV MENU */
