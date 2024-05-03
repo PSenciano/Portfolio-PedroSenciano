@@ -427,6 +427,12 @@ footer {
 
 @media(max-width: 1050px) {
 
+    /* ALL SECTIONS */
+
+    #last-hr {
+        margin-bottom: 60px;
+    }
+
     /* /PROJECTS */
 
     .projects-section {
@@ -501,6 +507,13 @@ footer {
         position: relative;
         right: 50px;
     }
+
+    /* FOOTER */
+
+    footer {
+        margin-top: 60px;
+    }
+
 }
 
 @media(max-width: 900px) {
