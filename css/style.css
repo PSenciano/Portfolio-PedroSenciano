@@ -29,6 +29,7 @@ html {
     background-attachment: fixed;
     font-family: sans-serif;
     color: #fff;
+    scroll-behavior: smooth;
 }
 
 /* SCROLL */
@@ -275,7 +276,7 @@ hr {
 }
 
 .contact-container .socials {
-    width: 50%;
+
     margin-bottom: 20px;
     justify-content: space-between;
 }
@@ -311,6 +312,17 @@ textarea {
     cursor: pointer;
     border: 1px solid var(--light-gray);
     transition: 1s;
+}
+
+.cv-button {
+    position: relative;
+    bottom: 20px;
+    margin-left: 2px;
+    padding: 15px;
+    background-color: var(--pink);
+    border: none;
+    color: #fff;
+    cursor: pointer;
 }
 
 /* /CONTACT SECTION */
@@ -451,6 +463,10 @@ footer {
 
     .socials {
         display: inline;
+    }
+
+    .left-form {
+        text-align: center;
     }
 
     .right-form {
