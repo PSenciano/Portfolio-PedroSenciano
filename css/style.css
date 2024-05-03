@@ -22,8 +22,8 @@ a {
 
 body,
 html {
-    background-color: var(--base);
     background: url("../assets/img/banner.gif");
+    background-color: var(--base);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
