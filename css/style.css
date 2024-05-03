@@ -331,6 +331,7 @@ footer {
     background: linear-gradient(90deg, #ac2174e5, #4a2fbd);
     text-align: center;
     padding: 5px;
+    min-height: 60px;
 }
 
 /* /FOOTER */
