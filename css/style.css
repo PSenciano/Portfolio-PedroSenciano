@@ -96,6 +96,7 @@ html {
     align-content: center;
     justify-items: center;
     height: 100vh;
+    min-height: 900px;
 }
 
 hr {
@@ -137,6 +138,11 @@ hr {
     color: var(--light-gray);
     background-color: var(--base);
     margin: 0;
+}
+
+.welcome-photo {
+    border-radius: 0% 50% 0% 0%;
+    box-shadow: 25px -20px 0px var(--purple);
 }
 
 .planet {
@@ -395,8 +401,9 @@ footer {
 @media(max-width: 1350px) {
 
     /* /WELCOME */
-    .welcome-rocket {
-        height: 250px;
+    .welcome-photo {
+        height: 260px;
+        margin-top: 20px;
     }
 
     /* /PROJECTS */
@@ -517,6 +524,11 @@ footer {
 }
 
 @media(max-width: 900px) {
+    /*WELCOME */
+    .welcome-photo {
+        margin-left: 10px;
+    }
+
     /* PROJECTS */
     .projects-section-header{
         margin-top: 60px;
@@ -568,7 +580,11 @@ footer {
         padding: 480px 0;
     }
 
-    .rocket {
+    .welcome-photo {
+        margin-left: 0;
+    }
+
+    .ps-photo {
         margin: 50px auto;
     }
 
