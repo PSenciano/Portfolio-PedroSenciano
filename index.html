@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
 </head>
 
 <body>
@@ -66,7 +70,7 @@
 
   <!-- HABILITIES I WORKED -->
   <section class="section habilities-section" id="habilities">
-    <h2 class="habilities-section-header hidden-lrx">Algumas das tecnologias que já trabalhei</h2>
+    <h2 class="habilities-section-header hidden-lrx">Algumas tecnologias que já trabalhei!</h2>
     <div class="habilities-container">
       <div class="habilities-list">
         <ul>
@@ -92,7 +96,7 @@
 
   <!-- START PROJECTS SECTION -->
   <section id="projects" class="section projects-section">
-    <h2 class="projects-section-header hidden-lrx">Estes são alguns dos meus projetos.</h2>
+    <h2 class="projects-section-header hidden-lrx">Alguns de meus projetos.</h2>
 
      <div class="projects-container">
 
@@ -102,8 +106,8 @@
           <h2>Projeto Cacau Sabor</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, ipsa. Quis praesentium nulla aspernatur perferendis dolores animi ad recusandae consectetur blanditiis, impedit, quod eius, inventore ullam officia! Maxime, corrupti nobis.</p>
           <div class="projects-links">
-            <a href="#" target="_blank">Deploy</a>
-            <a href="#" target="_blank">Site</a>
+            <a href="https://github.com/PSenciano/projetoCacauSabor" target="_blank">Deploy</a>
+            <a href="https://psenciano.github.io/projetoCacauSabor/index.html" target="_blank">Site</a>
         </div>
         </div>
       </div>
@@ -114,7 +118,7 @@
           <h2>Projeto ironForgeAcademy</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, reiciendis ea. Dignissimos repellat aperiam praesentium facilis assumenda. Quaerat quos suscipit minima non fugit! Illum dicta itaque alias quisquam at odio!</p>
           <div class="projects-links">
-            <a href="#" target="_blank">Deploy</a>
+            <a href="https://github.com/PSenciano/projetoIronForgeAcademy" target="_blank">Deploy</a>
             <a href="#" target="_blank">Site</a>
           </div>
         </div>
@@ -126,7 +130,7 @@
           <h2>Projeto Justice Link</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta ea ratione iusto voluptate ex commodi fuga. Est dolorem consequatur quas, sapiente sed recusandae nobis numquam, quasi dolorum quis reiciendis assumenda!</p>
           <div class="projects-links">
-            <a href="#" target="_blank">Deploy</a>
+            <a href="https://github.com/PSenciano/projetoJusticeLink" target="_blank">Deploy</a>
             <a href="#" target="_blank">Site</a>
           </div>
         </div>
@@ -140,32 +144,33 @@
   <!-- START CONTACT SECTION -->
   <section class="section contact" id="contact">
     <div class="contact-container hidden">
-      <form class="" action=""> <!-- MEXER -->
+      <form action="https://api.staticforms.xyz/submit" method="POST">
         <div class="left-form">
           <h4 class="contact-title">Contato</h4>
           <div class="socials">
-            <a href="#" target="_blank">
+            <a href="https://github.com/PSenciano" target="_blank">
               <img width="50" src="assets/img/svg/git.svg" alt="GitHub">
             </a>
-            <a href="#" target="_blank">
+            <a href="https://www.linkedin.com/in/pedro-senciano-739083242/" target="_blank">
               <img width="50" src="assets/img/svg/ln.svg" alt="Linkedin">
             </a>
-            <a href="#" target="_blank">
-              <img width="50" src="assets/img/svg/curriculum.svg" alt="Curriculum">
-            </a>
+            <a class="cv-button">Baixar CV</a>
           </div>
         </div>
         <div class="right-form">
+          <input type="hidden" name="accessKey" value="e3db7c27-df02-48d8-983f-7edb7f87bf30">
+          <input type="hidden" name="redirectTo" value="MUDAR LINK">
           <label for="name">
             Name
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" required minlength="2" maxlength="120">
           </label>
           <label for="email">
             Email
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required maxlength="100">
           </label>
-          <label for="message">Message
-            <textarea name="message" id="message" rows="10"></textarea>
+          <label for="message">
+            Message
+           <textarea name="message" id="message" rows="10" required minlength="5"></textarea>
           </label>
           <button class="btn">
             Enviar
