@@ -58,3 +58,27 @@ udyElements.forEach( (element) => myObserver.observe(element));
 duyElements.forEach( (element) => myObserver.observe(element));
 lrxElements.forEach( (element) => myObserver.observe(element));
 rlxElements.forEach( (element) => myObserver.observe(element));
+
+//Form Success Return
+function validateForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+  
+    // Verificar se os campos foram preenchidos
+    if (name == "" || email == "" || message == "") {
+      alert("Por favor, preencha todos os campos.");
+      return false;
+    }
+  
+    // Verificar se o email é válido
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email.match(emailPattern)) {
+      alert("Por favor, insira um endereço de email válido.");
+      return false;
+    }
+  
+    // Se tudo estiver correto, enviar o formulário e exibir um alerta de sucesso
+    alert("Formulário enviado com sucesso!");
+    return true;
+  }
