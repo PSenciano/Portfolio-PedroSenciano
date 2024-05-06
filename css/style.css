@@ -223,6 +223,7 @@ hr {
     background: linear-gradient(200deg, #ac2174e5, #4a2fbd);
     width: 1200px;
     margin: auto;
+    text-align: center;
 }
 
 .projects-card img {
