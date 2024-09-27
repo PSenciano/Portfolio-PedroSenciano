@@ -3,6 +3,7 @@
 :root {
     --light-gray: #acacac;
     --base: #121212;
+    --base-transparent: #121212c0;
     --trans-base: #121212c0;
     --pink: #aa367c;
     --purple: #2e2168;
@@ -124,7 +125,7 @@ hr {
 
 .presentation>h2 {
     margin: 30px 0;
-    width: 251px;
+    width: 254px;
     padding: 7px;
     overflow: hidden;
     border: 1px solid var(--light-gray);
@@ -136,7 +137,7 @@ hr {
     font-style: italic;
     font-size: 1.1rem;
     color: var(--light-gray);
-    background-color: var(--base);
+    background-color: var(--base-transparent);
     margin: 0;
 }
 
@@ -498,7 +499,6 @@ footer {
     }
 
     /* /HABILITIES */
-
     .habilities-container {
         width: 80%;
     }
@@ -508,7 +508,11 @@ footer {
     }
 
     .habilities-list ul {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .habilities-list ul li {
+        padding: 0 15px;
     }
 
     .habilities-planet {
@@ -551,7 +555,7 @@ footer {
     }
 }
 
-@media(max-width: 775px) {
+@media(max-width: 860px) {
     /* /HABILITIES */
     .habilities-container {
         display: flex;
@@ -603,7 +607,7 @@ footer {
     /* /HABILITIES */
     .habilities-list ul {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 1px;
     }
 
 }
